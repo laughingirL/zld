@@ -1,0 +1,76 @@
+*{
+    font-family: 微软雅黑;
+}
+
+    body{
+      position:relative;
+    }
+   #container{
+     margin:0px;
+     padding:0px;
+     font-size:15px;
+     background-color: #52c3dd;
+   }
+    #container a{
+    color:black;
+    font-size:20px;
+    
+   }
+   #container a:hover{
+     background-color: white;
+		color:black;
+   }
+   #container  ul:hover{background-color: #52c3dd}
+   
+   #carousel-701573
+   {
+     margin:60px auto;
+     padding:0px;
+     
+   }
+    #main{
+     position: relative;
+     top:50px;
+   }
+   
+	 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+		display: block;
+	 }
+	
+   a:link{
+		text-decoration:none;
+	
+	 }
+   .footer{ 
+   padding:0 auto;
+   margin:0;
+   text-align: center;
+    color:white;
+     bottom:0;
+     width:100%;
+     height:30px; 
+     background-color:  #737171;
+     clear:both
+   }
+     body,div,ul,li,a,img,h1,h2,h3,h4,h5,p,input{
+		margin:0;
+		padding:0;		
+  	}
+   .footer a{
+    color:white;
+    font-size:13px;
+    
+   }
+
+   .footer ul{list-style:none;float:center}
+   .footer li{float:left;width:100px;}
+
+.panel{
+    padding: 0;
+}
+.panel-body{
+    font-size: 17px;
+}
+.panel-primary{
+    margin-top: 40px;
+}

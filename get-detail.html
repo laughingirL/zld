@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" /> 
+  <title>Document</title> 
+  <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" /> 
+  <link rel="stylesheet" href="assets/main.css" /> 
+  <link rel="stylesheet" href="assets/detail.css" /> 
+ </head> 
+ <body> 
+  <div class="container"> 
+   <div class="row clearfix"> 
+    <div class="col-md-12 column"> 
+     <!--导航栏------> 
+     <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="container"> 
+      <div class="navbar-header" id="header"> 
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
+       <a class="navbar-brand" href="index.html"><h4>直流店</h4></a> 
+      </div> 
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
+       <ul class="nav navbar-nav"> 
+        <li> <a href="index.html#selling">正在出售</a></li> 
+        <li> <a href="index.html#searching">正在寻找</a></li> 
+       </ul> 
+       <form class="navbar-form navbar-left" role="search" id="search_btn"> 
+        <div class="form-group">
+          搜索 
+         <input class="form-control" type="text" /> 
+        </div> 
+        <button type="submit" class="btn btn-default btn-xm"><a href="search.html">Go</a> </button> 
+       </form> 
+       <ul class="nav navbar-nav navbar-right"> 
+        <li> <a href="login.html">登录</a></li> 
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">我的闲置 <strong class="caret"></strong></a> 
+         <ul class="dropdown-menu"> 
+          <li> <a href="sell.html">发布闲置</a></li> 
+          <li> <a href="mystore.html">编辑闲置</a></li> 
+          <li> <a href="mystore.html">删除闲置</a></li> 
+         </ul> </li> 
+       </ul> 
+      </div> 
+     </nav> 
+     <div class="col-md-8 col-md-offset-2 column" id="main"> 
+      <div class="row"> 
+       <div class="page-header col-md-8"> 
+        <h1 id="sell-name">想要一个雨伞</h1> 
+        <br /> 
+        <p>发布时间：2017年4月28日 22:22</p> 
+       </div> 
+      </div> 
+      <div> 
+       <p>类型：生活用品</p>
+       <br /> 
+       <p>期望价格：100-200</p>
+       <br /> 
+       <p>联系方式：+86 18810332233</p>
+       <br /> 
+      </div> 
+      <br /> 
+      <div> 
+       <ul class="nav nav-tabs"> 
+        <li class="active"><a href="#"><strong>详细描述</strong></a></li> 
+       </ul> 
+       <p>之前把自己最喜欢的伞送给前男友了，所以没伞了/(ㄒoㄒ)/~~<br /> 当时还在一起的时候，两个人一把伞，也没有多大的问题。<br /> 但是现在果然还是不行啊，自己得有一把自己的伞，没有伞下雨的时候真的很难受。<br /> 求一把花色少一点，朴素一点的伞，价格如期望价格，有意者请联系我O(∩_∩)O！<br /> </p> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div style="height: 800px"></div> 
+  <!--采用container-fluid，使得整个页尾的宽度为100%，并设置它的背景色--> 
+  <div class="footer"> 
+   <ul class=" pull-right"> 
+    <li><a href="about_us.html">关于我们</a> </li> 
+    <li><a href="link.html">联系我们</a></li> 
+    <li><a href="help.html">使用说明</a></li> 
+   </ul> 
+  </div> 
+  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script> 
+  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
+ </body>
+</html>
