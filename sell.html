@@ -6,10 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" /> 
   <title>Document</title> 
   <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" /> 
-  <link rel="stylesheet" type="" href="assets/edit.css" /> 
-  <link rel="stylesheet" href="assets/main.css" /> 
-  <script src="JavaScript/edit.js">
-  </script> 
+     <link rel="stylesheet" href="assets/main.css">
+   <link rel="stylesheet" href="assets/edit.css">
+  <script src="javaScript/edit.js"></script>
  </head> 
  <body> 
   <div class="container"> 
@@ -26,12 +25,12 @@
         <li> <a href="index.html#selling">正在出售</a></li> 
         <li> <a href="index.html#searching">正在寻找</a></li> 
        </ul> 
-       <form class="navbar-form navbar-left" role="search" id="search_btn"> 
+       <form class="navbar-form navbar-left" role="search"> 
         <div class="form-group">
           搜索 
          <input class="form-control" type="text" /> 
         </div> 
-        <button type="submit" class="btn btn-default btn-xm"><a href="search.html">Go</a> </button> 
+        <button type="submit" class="btn btn-default"><a href="search.html">Go</a> </button> 
        </form> 
        <ul class="nav navbar-nav navbar-right"> 
         <li> <a href="login.html">登录</a></li> 
@@ -44,89 +43,70 @@
        </ul> 
       </div> 
      </nav> 
-     <br />
-     <br />
-     <br />
-     <br /> 
-     <div id="main" class="col-md-12"> 
-      <!--标签------> 
-      <div class="content-wrapper col-md-6"> 
-       <div class="btn-group" id="biaoqian"> 
-        <h3>请选择物品类别</h3>
-        <br /> 
-        <h3> <button class="btn btn-warning" type="button"> 数码</button> <button class="btn btn-warning" type="button"> 化妆品</button> <button class="btn btn-warning" type="button"> 票务</button> <button class="btn btn-warning" type="button"> 其他</button> </h3> 
-       </div>
-       <br />
-       <br /> 
-       <!--基本信息------> 
-       <div> 
-        <form role="form"> 
-         <div class="form-group"> 
-          <label for="exampleInputEmail1">商品名称：</label> 
-          <input class="form-control" id="exampleInputEmail1" type="email" /> 
-         </div> 
-         <div class="form-group"> 
-          <label for="exampleInputPassword1">价格：</label> 
-          <input class="form-control" id="exampleInputPassword1" type="password" /> 
-         </div> 
-         <div class="form-group"> 
-          <h5><b>商品描述：</b></h5>
-          <br /> 
-          <textarea class="form-control" rows="5"></textarea> 
-         </div> 
-        </form> 
-        <div style="margin :0px auto; width:990px;"> 
-         <input type="file" name="file" id="doc" multiple="multiple" style="width:150px;" onchange="javascript:setImagePreviews();" accept="image/*" /> 
-         <div id="dd" style=" width:990px;"></div> 
-        </div>
-        <br /> 
-        <div class="form-group" style="clear:both"> 
-         <label for="name">联系人：</label> 
-         <input type="text" class="form-control" placeholder="文本输入" />
-         <br /> 
-         <label for="name">联系方式：</label> 
-         <input type="text" class="form-control" placeholder="文本输入" />
-         <br /> 
-        </div> 
-        <div> 
-         <button type="submit" class="btn btn-primary">发布</button> 
-        </div> 
-       </div> 
-      </div> 
-      <div class="panel panel-primary col-md-5 col-md-offset-1" id="readme"> 
+     <!--须知------> 
+     <div id="main" class="col-md-6"> 
+      <div class="panel panel-primary" id="readme"> 
        <div class="panel-heading"> 
         <h3 class="panel-title">须知</h3> 
        </div> 
        <div class="panel-body">
-         使用网页须知:
-        <br />
-        <br /> 1 本网页属于二手商品信息发布平台，不负责商品的交易。
-        <br />
-        <br /> 2 卖家、买家应遵守诚实交易的原则，自愿交易，诚实守信。
-        <br />
-        <br /> 3 卖家发布信息须遵循真实可靠原则，不欺瞒，如实发布商品信息。
-        <br />
-        <br /> 4 卖家发布信息时应遵守法律法规，相关规范，不可借助本平台发布违法违规信息.
-        <br />
-        <br /> 5 本平台禁止发布有关黄赌毒系列用品的信息，禁止发布涉嫌盗版侵权等商品信息。
-        <br />
-        <br /> 
+         这是一个基本的面板 
        </div> 
       </div> 
+      <!--标签------> 
+      <div class="btn-group" id="biaoqian"> 
+       <h3>请选择物品类别</h3> 
+       <h3> <button class="btn btn-default" type="button"> 数码</button> <button class="btn btn-default" type="button"> 化妆品</button> <button class="btn btn-default" type="button"> 票务</button> <button class="btn btn-default" type="button"> 其他</button> </h3> 
+      </div> 
+      <!--基本信息------> 
+      <div> 
+       <form role="form"> 
+        <div class="form-group"> 
+         <label for="exampleInputEmail1">商品名称</label> 
+         <input class="form-control" id="exampleInputEmail1" type="email" /> 
+        </div> 
+        <div class="form-group"> 
+         <label for="exampleInputPassword1">价格</label> 
+         <input class="form-control" id="exampleInputPassword1" type="password" /> 
+        </div> 
+        <div class="form-group"> 
+         <h5><b>商品描述</b></h5> 
+         <textarea class="form-control" rows="3"></textarea> 
+        </div> 
+       </form> 
+       <div style="margin :0px auto; width:990px;">
+        <input type="file"  name="file" id="doc" multiple="multiple"  style="width:150px;" onchange="javascript:setImagePreviews();" accept="image/*" />
+        <div id="dd" style=" width:990px;"></div>
+      </div>
+       
+       <div class="form-group" style="clear:both"> 
+        <label for="name">联系人</label> 
+        <input type="text" class="form-control" placeholder="文本输入" /> 
+        <label for="name">联系方式</label> 
+        <input type="text" class="form-control" placeholder="文本输入" /> 
+       </div> 
+       
+       <div> 
+        <button type="submit" class="btn btn-primary">发布</button> 
+       </div> 
+
+
+      </div>
      </div> 
     </div> 
    </div> 
-  </div> 
-  <div style="height: 400px"></div> 
-  <!--采用container-fluid，使得整个页尾的宽度为100%，并设置它的背景色--> 
-  <div class="footer"> 
-   <ul class=" pull-right"> 
-    <li><a href="about_us.html">关于我们</a> </li> 
-    <li><a href="link.html">联系我们</a></li> 
-    <li><a href="help.html">使用说明</a></li> 
-   </ul> 
-  </div> 
-  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script> 
-  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
+  </div> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+   <!--采用container-fluid，使得整个页尾的宽度为100%，并设置它的背景色--> 
+   <div class="footer"> 
+    <ul class=" pull-right"> 
+     <li><a href="#">关于我们</a> </li> 
+     <li><a href="#">联系我们</a></li> 
+     <li><a href="#">使用说明</a></li> 
+    </ul> 
+   </div> 
+   <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script> 
+   <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+  </div>
  </body>
 </html>

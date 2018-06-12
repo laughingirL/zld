@@ -1,14 +1,4 @@
-#about_us,.first-inf{
-    font-size: 20px;
-    font-family: 微软雅黑;
-}
-
-#img{
-    height: 300px;
-    width: 300px;
-}
-
-label{
-    font-size: 18px;
-}
-
+  #img{
+      height:400px;
+      width:400px;
+  }
